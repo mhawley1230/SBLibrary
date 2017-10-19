@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/books" path="/books" id="4d96f56b-af18-45bd-8d24-fb4494ef670d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4d96f56b-af18-45bd-8d24-fb4494ef670dfileName">%2Fbooks</con:setting></con:settings><con:parameters/><con:method name="GET" id="fa2d23f1-bacb-4aad-868f-287d72a6438e" method="GET"><con:description>Returns array based on book search params.
+searches books</con:description><con:settings/><con:parameters><con:parameter required="false"><con:name>title</con:name><con:value/><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type><con:default/><con:description>title search parameter</con:description></con:parameter><con:parameter required="false"><con:name>author</con:name><con:value/><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type><con:default/><con:description>author search parameter</con:description></con:parameter><con:parameter required="false"><con:name>subject</con:name><con:value/><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type><con:default/><con:description>subject search parameter</con:description></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "id" : 105,
+  "title" : "A Game of Thrones",
+  "description" : "From a master of contemporary fantasy comes the first novel of a landmark series...",
+  "author" : {
+    "id" : 254,
+    "first_name" : "George R.R.",
+    "last_name" : "Martin",
+    "_link" : "/authors/254"
+  },
+  "subject" : {
+    "id" : 396,
+    "name" : "Science Fiction &amp; Fantasy",
+    "description" : "Subject matter that ...",
+    "_link" : "/subjects/396"
+  },
+  "_link" : "/books/105"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:sampleContent></con:representation><con:request name="Request 1" id="6647f1f3-8bd3-4dd5-aedf-cba47eef1d97" mediaType="application/json"><con:description xsi:nil="true"/><con:settings/><con:endpoint>https://virtserver.swaggerhub.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters>
+  <con:entry key="author" value=""/>
+  <con:entry key="subject" value=""/>
+  <con:entry key="title" value=""/>
+</con:parameters><con:parameterOrder><con:entry>title</con:entry><con:entry>author</con:entry><con:entry>subject</con:entry></con:parameterOrder></con:request></con:method><con:method name="POST" id="cd66f6a1-5f5f-45a5-80d9-646edff226e8" method="POST"><con:description>Creates a new book in the DB, on success returns book json object
+create new book resource</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "id" : 105,
+  "title" : "A Game of Thrones",
+  "description" : "From a master of contemporary fantasy comes the first novel of a landmark series...",
+  "author" : {
+    "id" : 254,
+    "first_name" : "George R.R.",
+    "last_name" : "Martin",
+    "_link" : "/authors/254"
+  },
+  "subject" : {
+    "id" : 396,
+    "name" : "Science Fiction &amp; Fantasy",
+    "description" : "Subject matter that ...",
+    "_link" : "/subjects/396"
+  },
+  "_link" : "/books/105"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:sampleContent></con:representation><con:request name="Request 1" id="2e387a7f-129a-4848-97c2-7e816b491143" mediaType="application/json" postQueryString="false"><con:description xsi:nil="true"/><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://virtserver.swaggerhub.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>

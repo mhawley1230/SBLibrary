@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/personalAPIs/TestLibrary/1.0/books/{id}" method="DELETE" resourcePath="/personalAPIs/TestLibrary/1.0/books/{id}" id="c99a01e5-7521-4855-b48b-d94517c07e4d" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c99a01e5-7521-4855-b48b-d94517c07e4dfileName">%2FpersonalAPIs%2FTestLibrary%2F1.0%2Fbooks%2F%7Bid%7D1</con:setting></con:settings><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="0c545803-d5da-4e61-9975-ec10943b4923" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+  "id" : 105,
+  "title" : "A Game of Thrones",
+  "description" : "From a master of contemporary fantasy comes the first novel of a landmark series...",
+  "author" : {
+    "id" : 254,
+    "first_name" : "George R.R.",
+    "last_name" : "Martin",
+    "_link" : "/authors/254"
+  },
+  "subject" : {
+    "id" : 396,
+    "name" : "Science Fiction &amp; Fantasy",
+    "description" : "Subject matter that ...",
+    "_link" : "/subjects/396"
+  },
+  "_link" : "/books/105"
+}</con:responseContent></con:response><con:response name="Response 2" id="bb39821e-18fd-466d-89ba-46e63c9e8ea5" httpResponseStatus="404" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:responseContent></con:response></con:restMockAction>

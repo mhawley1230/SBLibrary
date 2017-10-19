@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/personalAPIs/TestLibrary/1.0/authors" method="GET" resourcePath="/personalAPIs/TestLibrary/1.0/authors" id="cb64478d-9049-465a-8ab8-94e350a838c7" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cb64478d-9049-465a-8ab8-94e350a838c7fileName">%2FpersonalAPIs%2FTestLibrary%2F1.0%2Fauthors</con:setting></con:settings><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="32f416c5-5a25-4498-9656-2adb5b2403f0" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+  "status" : 200,
+  "result" : [ {
+    "id" : 254,
+    "first_name" : "George R.R.",
+    "last_name" : "Martin",
+    "_link" : "/authors/254"
+  } ]
+}</con:responseContent></con:response><con:response name="Response 2" id="ae81f5db-ba39-4162-ac88-f69425936bf4" httpResponseStatus="404" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:responseContent></con:response></con:restMockAction>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/books/{id}" path="/books/{id}" id="4be9809c-c4b7-46e1-813a-87c0ff2372d0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4be9809c-c4b7-46e1-813a-87c0ff2372d0fileName">%2Fbooks%2F%7Bid%7D</con:setting></con:settings><con:parameters><con:parameter required="true"><con:name>id</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description>book id</con:description></con:parameter></con:parameters><con:method name="GET" id="35bac302-31ab-4afa-ae8d-418c72de4ffb" method="GET"><con:description>Returns array based of search params.
+returns book object</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "status" : 200,
+  "result" : {
+    "id" : 105,
+    "title" : "A Game of Thrones",
+    "description" : "From a master of contemporary fantasy comes the first novel of a landmark series...",
+    "author" : {
+      "id" : 254,
+      "first_name" : "George R.R.",
+      "last_name" : "Martin",
+      "_link" : "/authors/254"
+    },
+    "subject" : {
+      "id" : 396,
+      "name" : "Science Fiction &amp; Fantasy",
+      "description" : "Subject matter that ...",
+      "_link" : "/subjects/396"
+    },
+    "_link" : "/books/105"
+  }
+}</con:sampleContent></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:sampleContent></con:representation><con:request name="Request 1" id="187240ec-fd4f-4f0e-a58b-dae400f662ca" mediaType="application/json"><con:description xsi:nil="true"/><con:settings/><con:endpoint>https://virtserver.swaggerhub.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method><con:method name="DELETE" id="bc01e00a-c778-4217-a6fa-9cdcdd085124" method="DELETE"><con:description>Returns deleted object
+remove book resource</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "id" : 105,
+  "title" : "A Game of Thrones",
+  "description" : "From a master of contemporary fantasy comes the first novel of a landmark series...",
+  "author" : {
+    "id" : 254,
+    "first_name" : "George R.R.",
+    "last_name" : "Martin",
+    "_link" : "/authors/254"
+  },
+  "subject" : {
+    "id" : 396,
+    "name" : "Science Fiction &amp; Fantasy",
+    "description" : "Subject matter that ...",
+    "_link" : "/subjects/396"
+  },
+  "_link" : "/books/105"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:status/><con:params/><con:description xsi:nil="true"/><con:sampleContent>{
+  "status" : 404,
+  "message" : "Resource not found"
+}</con:sampleContent></con:representation><con:request name="Request 1" id="0d7dec0f-549d-40fd-85f0-f25ecd1e2940" mediaType="application/json"><con:description xsi:nil="true"/><con:settings/><con:endpoint>https://virtserver.swaggerhub.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource>
